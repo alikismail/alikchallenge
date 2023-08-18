@@ -10,7 +10,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .card {
       align-items: center;
         width: 100%;
