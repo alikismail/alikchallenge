@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/*  Variables */
+:root {
+    --paragraph: hsla(0, 1%, 65%, 0.75);
+    --body: hsl(233, 47%, 7%);
+    --cart: hsl(244, 38%, 16%);
+    --accent: hsl(277, 65%, 37%);
+    --em:rgb(143, 81, 201);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+      align-items: center;
+        width: 100%;
+        margin-top: -40%;
+        flex-direction: column-reverse;
+    }
+    .first{
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .second {
+       border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 5%;
+        width: 60%;
+        height: 300px;
+    }
+    .about {
+        flex-direction: column;
+    }
+}
+
+/* Body  */
+body {
+    position: relative;
+    background-color: var(--body);
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Head */
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+/* Card Styling */
+.card {
+    border-radius: 20px;
+    display: flex;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 20%);
+}
+
+/* First Section  */
+.first {
+    text-align: left;
+    padding: 10px;
+    height: auto;
+    overflow-wrap: break-word;
+    flex: 1;
+    background-color: var(--cart);
+    width: 60%;
+    padding: 6%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* Paragraph  */
+p {
+    color: var(--paragraph);
+    font-size: 20px;
+    white-space: 2px;
+    margin: 0;
+}
+
+/* Second Section  */
+.second {
+    background-image: linear-gradient(var(--accent), var(--accent)), url("images/image-header-desktop.jpg");
+    background-blend-mode: screen;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Em */
+em {
+    color: var(--em);
+    font-style: normal;
+}
+
+/* About Section  */
+.about {
+      margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about > h6 {
+    color: rgb(245, 245, 245);
+    font-size: medium;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.about > h6 > em {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--paragraph);
+}
